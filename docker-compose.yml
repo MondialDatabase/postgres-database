@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+  db-server:
+    image: postgres:11
+    volumes:
+      - mondial-database-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  mondial-database-data:
+    external: true
