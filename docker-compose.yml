@@ -4,8 +4,13 @@ services:
     image: postgres:11
     volumes:
       - mondial-database-data:/var/lib/postgresql/data
+    networks:
+      - mondial
     ports:
       - "5432:5432"
+networks:
+  mondial:
+    name: mondial
 volumes:
   mondial-database-data:
     external: true

@@ -11,7 +11,7 @@ It is running on PostgreSQL (11.x).
 3. Run `sh build-db.sh` to build the Mondial database schema.
    NOTE: This will not do a clean rebuild of the database. If this is desired (e.g. due to a schema change), execute
    an `docker volume rm mondial-database-data` command first.
-4. Run `docker-compose -p mondial up --build` to start the web services.
+4. Run `docker-compose up --build` to start the web services.
 
 To shut down the web services, run `docker-compose -p mondial down`.
 
